@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHINESE</title>
+    <style type="text/css">
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.7/css/font-awesome.min.css');
+        *{
+            padding: 0;
+            margin: 0;
+            color: #454545;
+        }
+        body{
+            color: white;
+            background:black;
+        }
+        
+        h1{
+            width: 3%;
+            position: relative;
+            top: 60px;
+            left: 90%;
+              cursor: pointer;
+              color: white;
+    }
+    h1:before{
+        content:attr(data-count);
+        position: absolute;
+        color: white;
+        right: 16px;
+        font-size : 15px;
+        text-align:center;
+        top: -12px;
+        width: 20px;
+        height: 20px;
+        background: red;
+        border-radius: 50%;
+        opacity:0;
+
+    }
+    h1.zero::before{
+        opacity:1;
+
+    }
+     section{
+        width:90%;
+        height: 400px;
+        display:flex;
+        justify-content: space-around;
+        margin: 100px auto;
+
+     }
+     section div{
+        border: 2px solid white;
+        width: 22%;
+        height: 93%;
+       background: black;
+        padding: 1%;
+        position: relative;
+
+     }
+     img{
+        width: 270px;
+        height: 186px;
+     }
+     B,b{
+        color: white;
+     }
+    p{
+        color: white;
+        text-align: center;
+    }
+    
+    h6{
+        text-align: center;
+        color: white;
+        width: 50px;
+        padding: 5px;
+        margin-top: 50px;
+        margin-left: 100px;
+        font-size: 15px;
+    }
+    button{
+        margin-top: 50px;
+        margin-left: 100px;
+        padding:5px;
+        background: red;
+        border:none;
+        outline:none;
+        font-weight: bold;
+        color: #fafafa;
+        cursor: pointer;
+
+    }
+      section div span{
+        position:absolute;
+        top: 14px;
+        left: 13px;
+        width:300px;
+        height: 186px;
+        display:none;
+     }
+     section div span img{
+     width: 100%;
+     height: 100%;
+    }
+    section div:nth-child(1)>span.active{
+        animation:first 0.5s ease-in;
+        z-index: 2;
+        display: block;
+    }
+    section div:nth-child(2)>span.active{
+        animation:second 0.5s ease-in;
+        z-index: 2;
+        display: block;
+    }
+    section div:nth-child(3)>span.active{
+        animation:third 0.5s ease-in;
+        z-index: 2;
+        display: block;
+    }
+    section div:nth-child(4)>span.active{
+        animation:fourth 0.5s ease-in;
+        z-index: 2;
+        display: block;
+    }
+    section div:nth-child(5)>span.active{
+        animation:fifth 0.5s ease-in;
+        z-index: 2;
+        display: block;
+    }
+    @keyframes first{
+        to{
+            width:30px;
+            height: 20px;
+            left:1290px;
+            top:-70px;
+        }
+    }
+    @keyframes second{
+        to{
+            width:30px;
+            height: 20px;
+            left:948px;
+            top:-70px;
+        }
+    }
+    @keyframes third{
+        to{
+            width:30px;
+            height: 20px;
+            left:606px;
+            top:-70px;
+        }
+    }
+    @keyframes fourth{
+        to{
+            width:30px;
+            height: 20px;
+            left:265px;
+            top:-70px;
+        }
+    }
+    @keyframes fifth{
+        to{
+            width:30px;
+            height: 20px;
+            left:1290px;
+            top:-70px;
+        }
+    }
+    .select{
+        width: 60%;
+        height: 580px;
+        background: black;
+        padding: 5%;
+        position: absolute;
+        top: -1000px;
+        left: 20%;
+        transition: 0.5%;
+        overflow-y:auto;
+        margin: auto;
+    }
+    .select.display{
+        top: 10px;
+    }
+     .select div{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        padding: 5px;
+        border: 1px solid white;
+        position: relative;
+        margin: 5px auto;
+
+
+     }
+     .select div img{
+        width: 300px;
+        height: 100%;
+
+     }
+      .select div p{
+         padding: 35px;
+         color: white;
+      }
+      .select div h6,
+      .select div button{
+        position: absolute;
+        left: 45%;
+        top: 50%;
+        color: white;
+
+      }
+      .select div button{
+         left: 60%;
+         top: 55%;
+
+      }
+      select div span{
+        display: none;
+      }
+      h2{
+        color: white;
+        font-size: 65px;
+      }
+    </style>
+</head>
+<body>
+    <h2>CHINESE</h2>
+<h1><i class="fa fa-shopping-cart"></i> cart</h1> 
+        <section> 
+            <div> 
+                <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hpbmVzZSUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                 alt="clickhere" height="200px" width="200px">
+                 <p> <B>CHOW MEIN</B></p>
+                 <h6>₹60.00</h6>
+                 <span></span>
+                 <button> Add-cart</button>
+                </div>
+            <div><img src="https://media.istockphoto.com/id/1256728079/photo/sukiyaki-japanese-traditional-hot-pot.jpg?b=1&s=170667a&w=0&k=20&c=A-sy3pEljmovjurnunTo5f--Ee9ViK8eWr2Op2oxaUo="
+                alt="clickhere" height="200px" width="200px">
+                <p><B>HOT POT</B> </p>
+                <h6>₹40.00</h6>
+                <span></span>
+                <button> Add-cart</button>
+            </div>
+            <div>
+                <img src="https://media.istockphoto.com/id/480052548/photo/dim-sum-dumplings-freshly-steamed-in-a-bamboo-steamer.jpg?b=1&s=170667a&w=0&k=20&c=DJxk6nLO4GiaZsCTgjKhdUIEBkxc1LlcNuAjqAd69wo="
+                 alt="clickhere" height="200px" width="200px">
+                 <p><B>DUMPLINGS</B> </p>
+                 <h6>FREE</h6>
+                 <span></span>
+                 <button> Add-cart</button>
+            </div>
+            <div>
+                <img src="https://media.istockphoto.com/id/1225394561/photo/image-of-spicy-kung-pao-chicken-takeaway-meal-in-black-plastic-disposable-container-with.jpg?b=1&s=170667a&w=0&k=20&c=0V4lOhfFNbxZAvLswIOmrL4-g2ryCkVapNU5aDGDH3k="
+                 alt="clickhere" height="200px" width="200px">
+                 <p> <B>KUNG PAO CHICKEN</B></p>
+                 <h6>₹180.00</h6>
+                 <span></span>
+                 <button> Add-cart</button>
+            </div>    
+        </section> 
+        <section> 
+            <div> 
+                <img src="https://media.istockphoto.com/id/530692041/photo/mapo-tofu.jpg?b=1&s=170667a&w=0&k=20&c=u7g6ujkNKsFpTPtHooJhO4TBolqEfJofdbTjclfasqE="
+                 alt="clickhere" height="200px" width="200px">
+                 <p> <B>MA PO TOFU</B></p>
+                 <h6>₹110.00</h6>
+                 <span></span>
+                 <button> Add-cart</button>
+                </div>
+            <div><img src="https://media.istockphoto.com/id/1389983679/photo/peking-duck.jpg?b=1&s=170667a&w=0&k=20&c=4H8u-xi1BYuLykVfQk_SNva4vEZVQdWQrEBYmt8Waw0="               alt="clickhere" height="200px" width="200px">
+                <p> <B>PECKING DUCK</B></p>
+                <h6>₹80.00</h6>
+                <span></span>
+                <button> Add-cart</button>
+            </div>
+            <div>
+                <img src="https://media.istockphoto.com/id/1352552176/photo/homemade-asian-chicken-wonton-soup.jpg?b=1&s=170667a&w=0&k=20&c=qfRqM1pcT6jFNHNXFU5QrMe8SY9Gyc9HXW3dKm1YnJs="
+                 alt="clickhere" height="200px" width="200px">
+                 <p> <b>CHICKEN WATSON SOUP</b></p>
+                 <h6>₹160.00</h6>
+                 <span></span>
+                 <button> Add-cart</button>
+            </div>
+            <div>
+                <img src="https://media.istockphoto.com/id/1339284437/photo/chinese-scallion-pancakes.jpg?b=1&s=170667a&w=0&k=20&c=aKuxb20hn4SZnrAveoMtnW5k4RL90xR4DyPwaEW5ye4="
+                 alt="clickhere" height="200px" width="200px">
+                 <p> <b>SCALLION PANCAKES</b></p>
+                 <h6>₹30.00</h6>
+                 <span></span>
+                 <button> Add-cart</button>
+            </div>    
+        </section> 
+        <section> 
+            <div> 
+                <img src="https://media.istockphoto.com/id/1078714042/photo/chinese-biang-biang-noodle.jpg?b=1&s=170667a&w=0&k=20&c=o0BLn5tB6PLeetiyVHvgcvUzNTir5nES3rmgYS024jE="
+                 alt="clickhere" height="200px" width="200px">
+                 <p><b>BIANG BIANG NOODLES</b>
+                 </p>
+                 <h6>₹30.00</h6>
+                 <span></span>
+                 <button> Add-cart</button>
+                </div>
+            <div><img src="https://media.istockphoto.com/id/1033208490/photo/chinese-dim-sum.jpg?b=1&s=170667a&w=0&k=20&c=-iGMYEZJqyzRLUMhJiOpdRkOJpMZB1JXOHUkJ0rchW8="
+                alt="clickhere" height="200px" width="200px">
+                <p><b>DIM SUM</b></p>
+                <h6>₹50.00</h6>
+                <span></span>
+                <button> Add-cart</button>
+            </div>
+            <div>
+                <img src="https://media.istockphoto.com/id/1254493321/photo/sichuan-boiling-hotpot-with-chili-pepper-in-chengdu.jpg?b=1&s=170667a&w=0&k=20&c=gtvo5Pwy7h6j9JN5RLX8UEQjCrTZtWTtsAkKVTUqQsQ="
+                 alt="clickhere" height="200px" width="200px">
+                 <p><b>SICHAUN HOT POT</b></p>
+                 <h6>₹110.00</h6>
+                 <span></span>
+                 <button> Add-cart</button>
+            </div>
+            <div>
+                <img src="https://media.istockphoto.com/id/1406851338/photo/cantonese-fried-glutinous-rice-with-mushroom-corn-carrots-and-sausage.jpg?b=1&s=170667a&w=0&k=20&c=wJUm33Yh7awXK7EYKXV3LdxAsg26z-OWZ5Y7bfjig78="
+                 alt="clickhere" height="200px" width="200px">
+                 <p><b>CATONESE FRIED RICE</b></p>
+                 <h6>₹60.00</h6>                    ₹
+                 <span></span>
+                 <button> Add-cart</button>
+            </div>    
+        </section> 
+        <div class="select">
+            
+        </div>
+</body>
+</html>  
+
+
+<script type="text/javascript">
+    var noti = document.querySelector('h1');
+    var select= document.querySelector('.select');
+    var button = document.getElementsByTagName('button')
+    for(but of button)
+    {
+        but.addEventListener('click',(e)=>{
+            var add = Number(noti.getAttribute('data-count')|| 0);
+            noti.setAttribute('data-count',add + 1);
+            noti.classList.add('zero');
+
+            var parent=e.target.parentNode;
+            var clone=parent.cloneNode(true);
+            select.appendChild(clone);
+            clone.lastElementChild.innerText="Buy-now";
+            // select.appendChild();
+            // delete.lastElementChild.innerText="delete";
+            
+
+            if(clone){
+                noti.onclick=()=>{
+                    select.classList.toggle('display');
+                }
+            }
+
+            var image = e.target.parentNode.querySelector('img');
+            var span = e.target.parentNode.querySelector('span');
+            var s_image = image.cloneNode(false);
+            span.appendChild(s_image);
+            span.classList.add('active');
+            setTimeout(()=>{
+                span.removeChild(s_image);
+            span.classList.remove('active');
+            }, 500);
+        })
+    }
+</script>
